@@ -57,11 +57,28 @@ header {
   font-size: 2.7rem;
 }
 
-.search > input {
+.wrapper {
+  margin: auto;
+  background-color: white;
   padding: 0 10px;
-  width: 70%;
+  width: 80%;
   height: 35px;
-  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+
+.wrapper > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.wrapper > input:focus {
+  outline: 0;
+}
+
+.wrapper > img {
+  width: 18px;
 }
 
 .search > button {
