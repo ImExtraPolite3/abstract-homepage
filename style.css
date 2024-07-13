@@ -87,10 +87,25 @@ header {
 
 .content {
   padding-top: 50px;
+  padding-left: 20px;
 }
 
 .content > div {
   display: flex;
+  margin-bottom: 20px;
+}
+
+.content > div > div {
+  margin: 0 10px;
+}
+
+article > h4,
+article > p {
+  margin-bottom: 10px;
+}
+
+article > a {
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
