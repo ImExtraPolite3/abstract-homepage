@@ -85,6 +85,14 @@ header {
   position: absolute;
 }
 
+.content {
+  padding-top: 50px;
+}
+
+.content > div {
+  display: flex;
+}
+
 @media (min-width: 992px) {
   header {
     display: flex;
