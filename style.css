@@ -110,6 +110,35 @@ article > a {
   text-decoration: none;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer > div > ul {
+  list-style: none;
+}
+
+footer > div > ul > li:hover {
+  text-decoration: underline;
+}
+
+footer > div > ul > li {
+  font-size: 0.95rem;
+}
+
+footer > div:last-child {
+  align-self: flex-end;
+}
+
+footer > div > h3 {
+  padding-bottom: 1%;
+}
+
 @media (min-width: 992px) {
   header {
     display: flex;
@@ -137,5 +166,20 @@ article > a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
+  }
+
+  footer {
+    padding: 40px 80px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  footer > div:nth-child(4) {
+    grid-row: 2;
+    grid-column: 4;
+  }
+
+  footer > div:last-child {
+    grid-row: 2;
+    grid-column: 5;
   }
 }
